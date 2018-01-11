@@ -1,0 +1,8 @@
+<html xmlns:th="http://thymeleaf.org">
+<div th:if="${carList != null}" >
+    <h1>Result</h1>
+    <ul>
+        <li th:each="car : ${carList}" th:text="${car.brand}" />
+    </ul>
+</div>
+</html>
